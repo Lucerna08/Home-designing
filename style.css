@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/house.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    padding: 2rem 3rem;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+
+}
+
+.link {
+    color: white;
+    display: inline;
+    font-size: 1.5rem;
+    margin: 2rem;
+    width: 28%;
+    text-align: center;
+    padding: 1rem;
+    background-color: #404040;
+    border-radius: 15px;
+}
+
+.links .active {
+    color: wheat;
+}
+
+.link:hover {
+    background-color: #252525;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    width: 35%;
+    height: 50%;
+    background-color: #2020207e;
+    border-radius: 50px;
+}
+
+.info h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-top: 3.5rem;
+}
+
+.info p {
+    margin: 2rem 1.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.info .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info .button {
+    position: relative;
+    padding: 2rem 2.5rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    margin: 2rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.info .button::before {
+    content: '';
+    width:0;
+    height: 100%;
+    background-color: #404040;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.info .button:hover::before {
+    width: 100%;
+}
+
+.info .button:nth-child(2){
+    background-color: #404040;
+}
+
+.info .button:nth-child(2)::before {
+    background-color: black;
+}
+
+.info .button:nth-child(2):hover::before {
+    width: 100%;
+}
+
+
+
+
+
